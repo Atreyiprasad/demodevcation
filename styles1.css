@@ -1,0 +1,76 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('bgc1.jpg');
+     /* Replace 'background-image.jpg' with the path to your image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background */
+    margin:0;
+    padding:0;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .calendar {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #a3ecb4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .month ul li {
+    list-style: none;
+    display: inline-block;
+  }
+  
+  .weekdays {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #3bc788;
+  }
+  
+  .weekdays li {
+    list-style: none;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+    padding: 10px;
+  }
+  
+  .days li {
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .days li:hover {
+    background-color: #f2f2f2;
+  }
+  
