@@ -1,67 +1,207 @@
-.date-container {
-    border: 2px solid #0e0d0d;
-    padding: 4px;
-    text-align: center;
-    width:1210px;
-    height:60px;
-    top:30px;
-    position:relative;
-    margin-top:40px;
-    margin-bottom: 20px; /* Add some bottom margin to create space between the cards */
-    background-color: #f0a9dc;
-    z-index:2;
+h2 {
+  font-family: 'Bebas Neue', Arial, sans-serif; /* Change the font family to Bebas Neue or your desired font */
+  font-size: 24px; /* Change the font size to your desired size */
+  font-weight: bold; /* Optional: You can adjust the font weight */
+  color: #333; /* Optional: You can adjust the font color */
+}
+
+
+
+
+.notes-container {
+  position: relative;
+  /* Fix the box to a position */
+  float: relative;
+  top: 20px;
+  /* Adjust the top position from the top of the page */
+
+  padding: 20px;
+  border: 2px solid #070807;
+  /* Add a border */
+  border-radius: 5px;
+  /* Add rounded corners */
+  background-image: url('bear2.jpg');
+  /* Add a background color */
+  width: 350px;
+  /* Set the width of the box */
+  height: 500px;
+  margin: 20px;
+}
+
+.notes-container h2 {
+  margin-bottom: 10px;
+}
+
+.range-container {
+  display: flex;
+  align-items: center;
+  margin: 50px auto;
+}
+
+.range-container {
+  position: absolute;
+  float: left;
+  top: 20px;
+  left: 350px;
+  width: 300px;
+  /* Set the width of the container */
+  height: 90px;
+  border: 2px solid #851f81;
+  /* Add a border */
+  padding: 20px;
+  /* Add padding */
+  border-radius: 5px;
+  /* Add border-radius for rounded corners */
+
+  margin-left: 20px;
+  ;
 
 }
-#date{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15px; 
+
+.range-input {
+
+  width: 200px;
+  /* Width of the range slider */
+  height: 10px;
+  /* Height of the range slider */
+  background: #d177ce;
+  /* Background color of the slider track */
+  outline: none;
+  /* Remove outline from the slider */
+  border-radius: 5px;
+  /* Add rounded corners to the slider track */
+  cursor: pointer;
+  /* Set cursor to pointer on hover */
 }
-#current-date{
-    font-family: 'Montserrat', sans-serif;
-    font-size:15px;
+
+.range-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Hide default slider thumb appearance */
+  appearance: none;
+  width: 20px;
+  /* Width of the slider thumb */
+  height: 20px;
+  /* Height of the slider thumb */
+  background: #c05fb1;
+  /* Background color of the slider thumb */
+  border-radius: 50%;
+  /* Create a circular slider thumb */
+  cursor: pointer;
+  /* Set cursor to pointer on hover */
+}
+
+.range-value {
+  margin-left: 10px;
+  /* Add margin to the left of the value */
+  font-size: 16px;
+  /* Font size of the value */
 }
 
 .card {
-    top:80px;
-    position:relative;
-    z-index:1;
-    margin-bottom: 20px; /* Add some bottom margin to create space between the cards */
+  width: 300px;
+  /* Set the width of each card */
+  top: 35px;
+  border: 2px solid #ff6600;
+  /* Set the border color of each card */
 }
 
-.test{
-    border: 2px solid #0e0d0d;
-    padding: 7px;
-    text-align: center;
-    width:1210px;
-    height:60px;
-    top:130px;
-    position:relative;
-    background-color: #f0a9dc;
-}
-#test{
-    font-size:20px;
-}
-.checkbox-container {
-    position: relative;
-    z-index: 0;
-    margin-top: 150px; /* Adjust the margin-top to move the checkbox container down */
-    display: flex; /* Add this line */
-    flex-wrap: wrap; /* Add this line to allow wrapping to multiple rows */
-    align-items: center;
-  }
-  
-.form-check-inline {
-    margin: 5px;  /* Adjust as needed */
+.range-input {
+  width: 150px;
+  /* Width of the range slider */
+  height: 10px;
+  /* Height of the range slider */
+  background: #b3ce75;
+  /* Background color of the slider track (dark blue) */
+  outline: none;
+  /* Remove outline from the slider */
+  border-radius: 5px;
+  /* Add rounded corners to the slider track */
+  cursor: pointer;
+  /* Set cursor to pointer on hover */
 }
 
-textarea.form-control {
-    height: 200px; /* Set the desired height */
-    resize: vertical; /* Allow vertical resizing */
+.range-input::-webkit-slider-thumb {
+
+  appearance: none;
+  width: 20px;
+  /* Width of the slider thumb */
+  height: 20px;
+  /* Height of the slider thumb */
+  background: #00008b;
+  /* Background color of the slider thumb (dark blue) */
+  border-radius: 50%;
+  /* Create a circular slider thumb */
+  cursor: pointer;
+  /* Set cursor to pointer on hover */
 }
 
+.code-block {
+  margin: 5px;
+  /* Adjust the value as needed */
+  padding: 100px;
+}
 
+body {
+  font-family: sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
 
+.mood-container {
+  display: flex;
+  flex-direction: column;
+  /* Stack boxes vertically */
+}
 
-  
-  
+.mood-box {
+  width: 200px;
+  /* Set width */
+  height: 50px;
+  /* Set height */
+  margin-bottom: 5px;
+  /* Add space between boxes */
+  position: relative;
+  /* Enable relative positioning for text */
+  cursor: pointer;
+  /* Optionally make boxes clickable */
+}
 
+.mood-text {
+  position: absolute;
+  /* Position text absolutely within box */
+  top: 50%;
+  /* Center text vertically */
+  left: 50%;
+  /* Center text horizontally */
+  transform: translate(-50%, -50%);
+  /* Account for absolute positioning */
+  font-size: 16px;
+}
+
+.mood-box:hover .mood-text {
+  color: white;
+  /* Change text color on hover */
+}
+
+.mood-box:first-child {
+  background-color: #4CAF50;
+  /* Green */
+}
+
+.mood-box:nth-child(2) {
+  background-color: #ffc107;
+  /* Yellow */
+}
+
+.mood-box:nth-child(3) {
+  background-color: #89e0b6
+    /* Orange */
+}
+
+.mood-box:last-child {
+  background-color: #f44336;
+  /* Red */
+}
