@@ -1,0 +1,67 @@
+.date-container {
+    border: 2px solid #0e0d0d;
+    padding: 4px;
+    text-align: center;
+    width:1210px;
+    height:60px;
+    top:30px;
+    position:relative;
+    margin-top:40px;
+    margin-bottom: 20px; /* Add some bottom margin to create space between the cards */
+    background-color: #f0a9dc;
+    z-index:2;
+
+}
+#date{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px; 
+}
+#current-date{
+    font-family: 'Montserrat', sans-serif;
+    font-size:15px;
+}
+
+.card {
+    top:80px;
+    position:relative;
+    z-index:1;
+    margin-bottom: 20px; /* Add some bottom margin to create space between the cards */
+}
+
+.test{
+    border: 2px solid #0e0d0d;
+    padding: 7px;
+    text-align: center;
+    width:1210px;
+    height:60px;
+    top:130px;
+    position:relative;
+    background-color: #f0a9dc;
+}
+#test{
+    font-size:20px;
+}
+.checkbox-container {
+    position: relative;
+    z-index: 0;
+    margin-top: 150px; /* Adjust the margin-top to move the checkbox container down */
+    display: flex; /* Add this line */
+    flex-wrap: wrap; /* Add this line to allow wrapping to multiple rows */
+    align-items: center;
+  }
+  
+.form-check-inline {
+    margin: 5px;  /* Adjust as needed */
+}
+
+textarea.form-control {
+    height: 200px; /* Set the desired height */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+
+
+
+  
+  
+
